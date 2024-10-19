@@ -1,0 +1,33 @@
+
+
+.app__bg {
+    display: flex; /* Enable flexbox layout */
+    align-items: center; /* Vertically align items */
+  }
+  
+  .app__wrapper-info {
+    width: 50%; 
+    padding:2rem; 
+  }
+  
+  .app__wrapper_img {
+    width: 50%; /* Adjust width as needed */
+  }
+  
+  .findus {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent image from overflowing */
+  }
+  
+  /* Optional: Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    .app__bg {
+      flex-direction: column; /* Stack vertically on smaller screens */
+    }
+  
+    .app__wrapper-info,
+    .app__wrapper_img {
+      width: 100%; /* Content and image take full width */
+    }
+  }

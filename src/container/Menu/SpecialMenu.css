@@ -1,0 +1,505 @@
+ /* .menu {
+  background-color: black; 
+  color: white; 
+  padding: 40px;
+  text-align: center; 
+  font-family: 'Cormorant Garamond', serif; 
+}
+.pallete{
+  color: var(--color-golden);
+  font-weight: 400;
+  font-family: 'cormorant,sanserif';
+  text-transform: capitalize;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+.menu__title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #dbc28e; 
+}
+
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.menu__section {
+  flex: 1;
+  padding: 20px;
+}
+
+.menu__section--meals {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+.menu__section--drinks {
+  
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+
+.menu__heading {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #dbc28e; 
+  text-align: center; 
+}
+
+.menu__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.menu__item-name {
+  flex-basis: 100%; 
+  color: #dbc28e; 
+}
+
+.menu__item-details {
+  flex-basis: 30%;
+  text-align: left;
+  font-size: 1rem;
+  color: white;
+}
+
+.menu__item-price {
+  flex-basis: 20%;
+  text-align: right;
+  color: #dbc28e; 
+}
+
+.menu__image-container {
+  flex: 0 0 400px;
+  text-align: center;
+  position: relative;
+}
+
+.menu__image {
+  
+  object-fit: cover;
+  
+  width: 100%;
+  height: 100vh; 
+}
+
+
+.menu__button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #dbc28e;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu__button:hover {
+  background-color: #b89b66; 
+}
+
+
+.menu__item::before, .menu__item::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: #dbc28e;
+  margin: 0 10px;
+}
+
+.menu__item::before {
+  margin-right: auto;
+}
+
+.menu__item::after {
+  margin-left: auto;
+}  */
+/* SpecialMenu.css */
+
+/* General Styles for the Menu */
+/* .menu {
+  background-color: #000; 
+  color: #fff; 
+  padding: 50px;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.menu__title {
+  font-size: 3rem;
+  color: #e0c078;
+  margin-bottom: 30px;
+}
+
+.pallete {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e0c078;
+  margin-bottom: 20px;
+}
+
+.images.spoon {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+.menu__section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.menu__section--meals {
+  text-align: left;
+  margin-top: 0;
+  line-height: 1.5rem;
+}
+
+.menu__section--drinks {
+  text-align: right;
+}
+
+.menu__heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  font-family: 'cormorant,sanserif';
+  
+  padding-left: 50px;
+  
+}
+
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+}
+
+.menu__item-name {
+  font-weight: bold;
+  color: #fff;
+}
+
+.menu__item-details {
+  color: #ccc;
+  font-size: 1rem;
+  display: block;
+}
+
+.menu__item-price {
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+}
+
+
+.menu__item-price::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu__image-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__image {
+  width: 300px; 
+  height: auto;
+  margin-bottom: 20px;
+  background-repeat: no-repeat,repeat;
+  background-blend-mode: lighten;
+  
+}
+
+.menu__button {
+  padding: 10px 30px;
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-base);
+}
+
+.menu__button:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  font-family: var(--font-base);
+} */
+/* Main container styling */
+/* Main container styling */
+.menu {
+  background-color: #0C0C0C; /* Dark background */
+  color: #fff; /* White text */
+  padding: 40px 20px; /* Space around the menu */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Georgia', serif; /* Serif font */
+}
+
+/* Header and titles */
+.pallete {
+  font-size: 14px; /* Small text size */
+  color: #CDA274; /* Gold color */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.menu__title {
+  font-size: 40px; /* Large title font */
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Menu container layout */
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 1200px; /* Max width for layout */
+}
+
+/* Sections styling */
+.menu__section {
+  flex: 1;
+  padding: 20px;
+}
+
+.menu__section--meals {
+  margin-right: 20px; /* Space between meals and image */
+}
+
+.menu__section--drinks {
+  margin-left: 20px; /* Space between drinks and image */
+}
+
+/* Section headings */
+.menu__heading {
+  font-size: 28px; /* Section heading size */
+  margin-bottom: 20px;
+  color: #CDA274; /* Gold color */
+}
+
+/* Menu list styling */
+.menu__list {
+  list-style: none; /* No bullets */
+  padding: 0;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #555; /* Divider line */
+}
+
+.menu__item-name {
+  font-size: 18px; /* Menu item name size */
+  font-weight: bold;
+}
+
+.menu__item-details {
+  font-size: 14px; /* Smaller details font */
+  color: #CDA274; /* Gold color */
+  margin-left: 10px;
+}
+
+.menu__item-price {
+  font-size: 20px; /* Price size */
+  color: #CDA274; /* Gold color */
+}
+
+/* Center image container */
+.menu__image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__image {
+  width: 300px; /* Fixed width for the image */
+  margin-bottom: 20px;
+  border-radius: 15px; /* Slightly rounded corners */
+}
+
+.menu__button {
+  background-color: #CDA274; /* Gold button */
+  color: #0C0C0C; /* Dark text */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu__button:hover {
+  background-color: #B2875D; /* Darker gold on hover */
+}
+
+@media (max-width: 600px) {
+  .menu {
+    padding: 20px 10px; /* Reduced padding */
+  }
+
+  .menu__title {
+    font-size: 28px; /* Smaller title */
+    margin-bottom: 20px;
+  }
+
+  .menu__container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center-align content */
+    width: 100%; /* Full width */
+  }
+
+  .menu__section {
+    padding: 10px;
+    margin-bottom: 20px; /* Space between sections */
+  }
+
+  .menu__section--meals,
+  .menu__section--drinks {
+    margin: 0; /* No side margins */
+  }
+
+  .menu__heading {
+    font-size: 22px; /* Smaller heading */
+    margin-bottom: 15px;
+  }
+
+  .menu__item {
+    flex-direction: column; /* Stack item contents */
+    align-items: flex-start; /* Left-align content */
+    padding: 10px 0;
+  }
+
+  .menu__item-name {
+    font-size: 16px; /* Smaller item name */
+    margin-bottom: 5px; /* Space below name */
+  }
+
+  .menu__item-details {
+    font-size: 12px; /* Smaller details */
+  }
+
+  .menu__item-price {
+    font-size: 16px; /* Smaller price */
+  }
+
+  .menu__image {
+    width: 80%; /* Responsive width */
+  }
+}
+
+/* Medium screens (600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .menu__title {
+    font-size: 34px; /* Adjusted title size */
+  }
+
+  .menu__container {
+    flex-direction: column; /* Stack sections */
+    width: 90%; /* Adjusted width */
+  }
+
+  .menu__section {
+    padding: 15px; /* Adjusted padding */
+    margin-bottom: 30px; /* Space between sections */
+  }
+
+  .menu__section--meals,
+  .menu__section--drinks {
+    margin: 0; /* No side margins */
+  }
+
+  .menu__heading {
+    font-size: 24px; /* Adjusted heading size */
+  }
+
+  .menu__item-name {
+    font-size: 16px; /* Smaller item name */
+  }
+
+  .menu__item-price {
+    font-size: 18px; /* Smaller price */
+  }
+
+  .menu__image {
+    width: 250px; /* Adjusted image size */
+  }
+}
+
+/* Large screens (over 900px) */
+@media (min-width: 901px) {
+  .menu__container {
+    flex-direction: row; /* Default layout */
+  }
+
+  .menu__section {
+    margin-bottom: 0; /* No space between sections */
+  }
+}
